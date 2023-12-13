@@ -3,86 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>React App</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-
-    <script crossorigin src=""></script>
-    <script crossorigin src=""></script>
-    <script src=""></script>
-
     <div id="root"></div>
     
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
-<script type="text/babel">
-    function App(){
-        return(
-
-            <div className="container">
-        <!-- 左欄 -->
-        <div className="header">
-            <h1><img src="./img/logo.png" alt=""/></h1>
-            <ul>
-
-                <li> <a href="#">首頁</a> </li>
-                <li><a href="#">連結1</a></li>
-                <li><a href="#">連結2 </a></li>
-                <li><a href="#">連結3</a></li>
-                <li><a href="#">連結4</a></li>
-                <li><a href="#">連結5</a></li>
-                <li><a href="#">連結6</a></li>
-                <li><a href="#">連結7</a></li>
-            </ul>
-        </div>
-        {/*!-- 右欄 --*/}
-        <div className="content">
-        <p><img src="./img/title_img.png" alt=""/></p>
-        <h3>Lorem ipsum dolor sit amet cons</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore impedit odio vero sint suscipit earum
-            provident, ipsum consectetur corporis cupiditate labore eius a, maxime reprehenderit repellendus? Dolorum
-            sed cumque similique.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus esse fugiat voluptatem sunt saepe, inventore
-            veniam quos a voluptatum dolor molestiae, debitis libero itaque iure dolorum id est ratione quasi.</p>
-        <div class="info">
-
-            <div className="box b1">
-                <p><img src="./img/icon1.png" alt=""/></p>
-                <h4>方案1</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adi skefnejs fjksnj fjsknfj fjsknfj fjeskn js jkskfjnesjk fesknfj fjksjis</p>
-                <p><a href="#">詳細內容</a></p>
-            </div>
-
-            
-                <div className="box b2">
-                    <p><img src="./img/icon2.png" alt=""/></p>
-                    <h4>方案2</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipi sfensjf fsknf sk fnsken feksn fkjfkjesnf jk fjnekjsnfjn esjk nfejkss</p>
-                    <p><a href="#">詳細內容</a></p>
+    <script type="text/babel">
+        function App() {
+            return (
+                <div className="container">
+                    {/* 左欄 */}
+                    <div className="header">
+                        <h1><img src="./img/logo.png" alt=""/></h1>
+                        <ul>
+                            <li><a href="#">首頁</a></li>
+                            <li><a href="#">連結1</a></li>
+                            <li><a href="#">連結2</a></li>
+                            <li><a href="#">連結3</a></li>
+                            <li><a href="#">連結4</a></li>
+                            <li><a href="#">連結5</a></li>
+                            <li><a href="#">連結6</a></li>
+                            <li><a href="#">連結7</a></li>
+                        </ul>
+                    </div>
+                    {/* 右欄 */}
+                    <div className="content">
+                        <p><img src="./img/title_img.png" alt=""/></p>
+                        <h3>Lorem ipsum dolor sit amet cons</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore impedit odio vero sint suscipit earum
+                            provident, ipsum consectetur corporis cupiditate labore eius a, maxime reprehenderit repellendus? Dolorum
+                            sed cumque similique.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus esse fugiat voluptatem sunt saepe, inventore
+                            veniam quos a voluptatum dolor molestiae, debitis libero itaque iure dolorum id est ratione quasi.</p>
+                        <div className="info">
+                            <div className="box b1">
+                                <p><img src="./img/icon1.png" alt=""/></p>
+                                <h4>方案1</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adi skefnejs fjksnj fjsknfj fjsknfj fjeskn js jkskfjnesjk fesknfj fjksjis</p>
+                                <p><a href="#">詳細內容</a></p>
+                            </div>
+                            <div className="box b2">
+                                <p><img src="./img/icon2.png" alt=""/></p>
+                                <h4>方案2</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipi sfensjf fsknf sk fnsken feksn fkjfkjesnf jk fjnekjsnfjn esjk nfejkss</p>
+                                <p><a href="#">詳細內容</a></p>
+                            </div>
+                            <div className="box b3">
+                                <p><img src="./img/icon3.png" alt=""/></p>
+                                <h4>方案3</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipis skejfhks skjfekjs n fskjfkj f fejksfjfkjske j fjkesf ekjsfnkjs</p>
+                                <p><a href="#">詳細內容</a></p>
+                            </div>
+                        </div>
+                        <div className="footer">
+                            <h2>北商有機</h2>
+                            <h4>copyright 2023 &copy; 北商有機</h4>
+                        </div>
+                    </div>
                 </div>
+            );
+        }
 
-              
-                    <div className="box b3">
-                        <p><img src="./img/icon3.png" alt=""/></p>
-                        <h4>方案3</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipis skejfhks skjfekjs n fskjfkj f fejksfjfkjske j fjkesf ekjsfnkjs</p>
-                        <p><a href="#">詳細內容</a></p>
-                    </div>
-
-                    </div>
-
-                    <div className="footer">
-                        <h2>北商有機</h2>
-                        <h4>copyright 2023 & copy; 北商有機</h4>
-
-              </div>
-        </div>
-    </div>
-        )
-    }
-
-</script>
-
+        // 將App組件渲染到DOM中的#root元素中
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
 </body>
 </html>
