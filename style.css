@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+
+    width: 1200;
+    margin: 0 auto;
+    display: flex;
+}
+/*左側區*/
+.header{
+    
+    width: 260px;
+    padding: 20px;
+    background-image: url(./img/left_bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: #899076;
+}
+.header ul{
+    padding: 30px;
+}
+.header li{list-style: none;}
+.header li a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px dotted #fff ;
+    /*超連接轉換區塊元素`,因為超連結試航內元素沒有寬高範圍，寬高範圍是內容撐開的*/
+    display: block;
+    text-align: center;
+    line-height: 80px;   /*行高*/
+}
+/*右側區*/
+
+.content{
+    background-color: #d1dbb4;
+    width: 820px;
+    padding: 20px 40px;
+}
+.content h3{
+    font-size: 32px;
+    color: #8a9077;
+    text-align: center;
+    margin: 20px 0 ;
+}
+.content p{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.info{
+    /*橫向魔法*/
+    display: flex;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+.info .box{
+   
+    width: 220px;
+    padding: 40px 20px;
+}
+.info .b1{background-color: #fed0cd;}
+.info .b2{background-color: #fff3a8;}
+.info .b3{background-color: #c1eab3;}
+
+.info .box h4{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom:10px ;
+}
+
+.info .box a{
+    color: #fff;
+    text-decoration: none;
+    background-color: #7a6361;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+.footer{
+    background-color: #535749;
+    color: #cad4ac;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+.footer h2{
+    margin-bottom: 10px;
+}
